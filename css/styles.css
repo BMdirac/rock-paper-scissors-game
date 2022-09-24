@@ -1,4 +1,4 @@
-* {
+ * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -46,4 +46,97 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.score h1 {
+  color: #565468;
+  font-size: 56px;
+}
+
+.score p {
+  color: #2a45c2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+}
+
+.hands {
+  background: url("/assets/triangle.png") no-repeat center;
+  width: 476px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap; /* to make the last rock (blow hands) comes down */
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.scissors {
+  margin-left: 20px;
+}
+
+.paper {
+  margin-right: 20px;
+}
+
+.hands .hand {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hands .hand:hover {
+  transform: translate3d(0px, -8px, 0px); /* x,y and z axis */
+}
+
+.contest {
+  width: 900px;
+  display: none;
+  margin-top: 50px;
+}
+
+.contest img {
+  width: 275px;
+  height: 275px;
+}
+
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.referee h1 {
+  font-size: 45px;
+}
+
+.newGame {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);;
+  transition: all 0.15s;
+}
+
+.newGame:hover {
+  background-color: bisque;
+  transform: translate3d(0px, -2px, 0px);
 }

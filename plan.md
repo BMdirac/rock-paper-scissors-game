@@ -1,6 +1,6 @@
 1. Create the boxes for how it looks like
 
-2. Create the header
+2. Create the header/scoreboard 
 
 3. Create the Rock, Paper, Scissor buttons
 
